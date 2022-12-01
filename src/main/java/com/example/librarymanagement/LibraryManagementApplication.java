@@ -36,20 +36,20 @@ public class LibraryManagementApplication {
             repository.saveAll(
                     List.of(kambii, tindra)
             );
-            Book springBoot = new Book(
+            Book bookName1 = new Book(
                     "isbn",
                     "springBoot",
                     "spring",
                     "application development"
             );
-            Book springBoot2 = new Book(
+            Book bookName2 = new Book(
                     "isbn",
                     "springBoot2",
                     "spring2",
                     "application development"
             );
             bookRepository.saveAll(
-                    List.of(springBoot, springBoot2)
+                    List.of(bookName1, bookName2)
             );
             Category categoryName1 = new Category(
                     "programming"

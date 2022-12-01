@@ -25,16 +25,16 @@ public class LibraryManagementApplication {
     @Bean
     CommandLineRunner commandLineRunner(AuthorRepository repository, BookRepository bookRepository, CategoryRepository categoryRepository, PublisherRepository publisherRepository){
         return args -> {
-            Author kambii = new Author(
+            Author authorName1 = new Author(
                     "kambii",
                     "i have worked as an author for 10 years"
             );
-            Author tindra = new Author(
+            Author authorName2 = new Author(
                     "tindra",
                     " i like righting books i love my job as an author"
             );
             repository.saveAll(
-                    List.of(kambii, tindra)
+                    List.of(authorName1, authorName2)
             );
             Book bookName1 = new Book(
                     "isbn",
